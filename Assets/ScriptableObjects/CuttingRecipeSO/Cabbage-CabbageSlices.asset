@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 557a5773ed8d2814eb9f36c620e90124, type: 3}
-  m_Name: TomatoSlices
+  m_Script: {fileID: 11500000, guid: d0b764c6788bb6146a364474963b7ec7, type: 3}
+  m_Name: Cabbage-CabbageSlices
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8410800319255135041, guid: f5dd723003ac8e54d9019f1715f83ab1, type: 3}
-  sprite: {fileID: 21300000, guid: c9f08c3c1ae2a364aaeaa3712540b1d4, type: 3}
-  objectName: TomatoSlices
+  input: {fileID: 11400000, guid: 34a090439e2fa214992946b0ca01b3b2, type: 2}
+  output: {fileID: 11400000, guid: f74c87b4b95dfa244bd09ca71852c61a, type: 2}
