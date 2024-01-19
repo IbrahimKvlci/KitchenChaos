@@ -5,6 +5,7 @@ using UnityEngine;
 public class CuttingCounterVisual : MonoBehaviour
 {
     private const string CUT = "Cut";
+    private const string OPEN_CLOSE = "OpenClose";
 
     [SerializeField] private ContainerCounter containerCounter;
     private Animator animator;
