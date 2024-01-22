@@ -5,9 +5,8 @@ using UnityEngine;
 public class CuttingCounterVisual : MonoBehaviour
 {
     private const string CUT = "Cut";
-    private const string OPEN_CLOSE = "OpenClose";
 
-    [SerializeField] private ContainerCounter containerCounter;
+    [SerializeField] private CuttingCounter cuttingCounter;
     private Animator animator;
 
     private void Awake()
@@ -17,11 +16,13 @@ public class CuttingCounterVisual : MonoBehaviour
 
     private void Start()
     {
-        containerCounter.OnPlayerGrabbedObject += ContainerCounter_OnPlayerGrabbedObject;
+        cuttingCounter.OnCut += CuttingCounter_OnCut;
     }
 
-    private void ContainerCounter_OnPlayerGrabbedObject(object sender, System.EventArgs e)
+    private void CuttingCounter_OnCut(object sender, System.EventArgs e)
     {
-        animator.SetTrigger(OPEN_CLOSE);
+        animator.SetTrigger(CUT);
     }
+
+
 }
