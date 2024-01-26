@@ -36,6 +36,20 @@ public class KitchenObject : MonoBehaviour
         transform.localPosition=Vector3.zero;
     }
 
+    public bool TryGetKitchenObject<T>(out T kitchenObject) where T : KitchenObject
+    {
+        if(this is T)
+        {
+            kitchenObject = this as T;
+            return true;
+        }
+        else
+        {
+            kitchenObject = null;
+            return false;
+        }
+    }
+
     public void DestroySelf()
     {
         kitchenObjectParent.ClearKitchenObject();
